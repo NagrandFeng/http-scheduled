@@ -32,7 +32,7 @@ MyThreadPoolExecutor：改造ThreadPoolExecutor
 TripScheduledThreadPoolExecutor(extends MyThreadPoolExecutor) ：改造ScheduledThreadPoolExecutor ，使用schedule(task,delay,unit)方法实现延迟调用
 
 
-## DelayWorkQueue介绍
+## 四、DelayWorkQueue介绍
 核心底层实现通过堆实现，本质是一个小顶堆，元素通过delay时间比较，delay最小的时间排在堆顶，取元素的时候，队首元素就是堆顶元素
 
 1.使用DelayedWorkQueue作为阻塞队列，并没有像ThreadPoolExecutor类一样开放给用户进行自定义设置。该队列是ScheduledThreadPoolExecutor类的核心组件。
